@@ -1,6 +1,11 @@
 import streamlit as st
 from streamlit.components.v1 import html
 
+# Define the function to calculate the increase
+def calculate_increase(base_value, percent):
+    result = base_value + (base_value * percent)
+    return int(result)  # Convert to integer for simplicity
+
 # Function to display a "Copy to Clipboard" button and script
 def copy_to_clipboard_button(text_to_copy):
     # HTML + JS code to create a button and copy text to clipboard
@@ -20,7 +25,7 @@ def copy_to_clipboard_button(text_to_copy):
     """
     html(button_html)
 
-# Your main application code
+# Streamlit UI setup
 st.title("Percentage Calculator")
 
 # Entry widget for user input
