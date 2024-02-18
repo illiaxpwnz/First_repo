@@ -23,7 +23,7 @@ def copy_to_clipboard_button(int_value):
     """
     html(button_html)
 
-st.title("Калькулятор націнкиr")
+st.title("Калькулятор націнки")
 
 base_value = st.number_input("Ціна:", min_value=0.0, format="%f")
 result_placeholder = st.empty()
