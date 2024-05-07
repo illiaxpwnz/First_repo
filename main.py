@@ -42,3 +42,9 @@ if st.button("25%"):
     result = calculate_increase(base_value, 0.25)
     result_placeholder.write(f"Результат: {result}")
     copy_to_clipboard_button(result)
+
+# Adding the 35% button
+if st.button("35%"):
+    result = calculate_increase(base_value, 0.35)
+    result_placeholder.write(f"Результат: {result}")
+    copy_to_clipboard_button(result)
